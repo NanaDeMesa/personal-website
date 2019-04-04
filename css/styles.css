@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 100px auto 100px;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Satisfy", cursive;
+}
+
+footer {
+  display: flex;
+  background-color: grey;
+  color: white;
+  justify-content: center;
+}
