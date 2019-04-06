@@ -6,11 +6,8 @@
 body {
   display: grid;
   height: 100vh;
-  grid-template-areas:
-    "head"
-    "main"
-    "foot";
-  grid-template-rows: 1fr 2fr 80px;
+  grid-template-areas: auto; 
+  grid-template-rows: repeat(12, 1fr);
   font-family: Roboto, 'Helvetica New', Verdana, sans-serif;
   font-size: 16px; 
 }
