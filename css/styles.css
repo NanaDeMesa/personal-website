@@ -26,6 +26,7 @@ header {
 .header__navbar {
   line-height: 60px;
   color: white;
+  text-shadow: 2px 2px #5e7c8f;
   position: fixed;
   right: 10px;
 }
@@ -55,7 +56,7 @@ header {
 }
 
 h1 {
-  font-size: 120%;
+  font-size: 150%;
   color: #66cccc;
   letter-spacing: 1px;
   word-spacing: 1px;
@@ -64,7 +65,7 @@ h1 {
 .header__section-input p {
   font-family: "Radley", serif;
   color: white;
-  font-size: 120%;
+  font-size: 150%;
   letter-spacing: 1px;
   font-style: italic;
   margin-bottom: 1px;
@@ -119,6 +120,7 @@ p {
 
 .article__skill_container h3 {
   margin: 30px;
+  color: #353535;
 }
 
 .article__skill {
@@ -131,6 +133,7 @@ p {
   flex-direction: column;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 10px;
   background: url(../images/quotepic.svg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -141,7 +144,13 @@ p {
 }
 
 .section__quote_text {
+  font-family: "Radley", serif;
+  letter-spacing: 1px;
+  word-spacing: 1px;
   color: white;
+  text-shadow: 2px 2px #8c9398;
+  font-style: italic;
+  font-size: 18px;
 }
 
 .section__get_in_touch {
@@ -155,34 +164,74 @@ p {
   grid-gap: 20px;
 }
 
+.section__get_in_touch_h3 {
+  color: #353535;
+}
+
 .section__get_in_touch_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+  transition: all 0.7s ease;
+}
+
+.section__get_in_touch_color {
+  color: white;
+}
+
+.section__get_in_touch_color:hover {
+  transform: translatez(-450px);
+  color: #8c9398;
 }
 
 .section__get_in_touch_city {
-  background-color: #f3f5f8;
+  grid: flex;
+  background-color: #66cccc;
   box-shadow: 12px 12px 15px -15px;
+}
+
+.section__get_in_touch_city:hover {
+  transform: translatez(-450px);
+  background: #f3f5f8;
 }
 
 .section__get_in_touch_phone {
-  background-color: #f3f5f8;
+  grid: flex;
+  background-color: #66cccc;
   box-shadow: 12px 12px 15px -15px;
 }
 
+.section__get_in_touch_phone:hover {
+  transform: translatez(-450px);
+  background: #f3f5f8;
+}
+
 .section__get_in_touch_email {
-  background-color: #f3f5f8;
+  grid: flex;
+  background-color: #66cccc;
   box-shadow: 12px 12px 15px -15px;
+}
+
+.section__get_in_touch_email:hover {
+  transform: translatez(-450px);
+  background: #f3f5f8;
+}
+
+.section_get_in_touch_logos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 footer {
   display: flex;
-  grid-area: "foot";
   background-color: #242830;
-  color: white;
   justify-content: center;
   align-items: center;
   font-size: 13px;
   height: 100px;
+}
+
+.footer__copyright {
+  color: white;
 }
