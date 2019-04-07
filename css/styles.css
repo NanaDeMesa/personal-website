@@ -12,35 +12,13 @@ body {
   font-size: 16px; 
 }
 
-section {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;   
-  letter-spacing: 1px; 
-  color: white;
-  background-color: transparent;
-}
-
-h1 {
-  grid-area: "after hero";
-  grid: flex;
-  font-size: 16px; 
-  text-align: center;
-  color: #66CCCC;
-}
-
-p {
-  grid: flex; 
-  grid-area: "hero h1";
-  text-align: center;
-  font-style: italic;
-  margin-bottom: 1px; 
-}
-
 header {
   display: block;
-  grid-area: "head";
+  flex-direction: center; 
   background-image: url("/images/hero.jpg");
-  background-size: cover;
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh; 
 }
 
  {
@@ -52,11 +30,53 @@ header {
     url(/images/hero.jpg);
 }
 
+.header__navbar {
+  line-height: 60px; 
+  color: white;
+  position: fixed;
+  right: 10px;
+}
+
+.header__navbar_right {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+}
+
+.header__list_item {
+  text-decoration: none;  
+  padding-right: 40px;
+}
+
+.header__section-input {
+  display: flex; 
+}
+
+h1 {
+  justify-content: center; 
+  font-size: 16px; 
+  text-align: center;
+  color: #66CCCC;
+}
+
+p {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1px; 
+}
+
 main {
   display: flex;
   grid-area: "main";
+  flex-direction: column;
   background-color: #F3F5F8;
   margin: 0 5px;
+}
+
+.article__about_me {
+display: flex; 
+background-color: green;
+flex-direction: column; 
 }
 
 footer {
