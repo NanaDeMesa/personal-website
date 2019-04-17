@@ -10,6 +10,7 @@ body {
   grid-template-rows: repeat(12, 1fr);
   font-family: Roboto, "Helvetica New", Verdana, sans-serif;
   font-size: 16px;
+  color: #8c9398;
 }
 
 header {
@@ -88,8 +89,11 @@ main {
   padding: 100px;
 }
 
+.article__profile-text {
+  padding: 50px;
+}
+
 p {
-  color: #8c9398;
   padding: 20px;
 }
 
@@ -114,7 +118,7 @@ p {
   background-color: white;
   margin-bottom: 10px;
   grid-template-rows: auto auto;
-  padding: 10px;
+  padding: 40px;
   text-align: center;
 }
 
@@ -135,9 +139,6 @@ p {
   margin-bottom: 20px;
   margin-top: 10px;
   background: url(../images/quotepic.svg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   padding: 50px 0;
@@ -156,11 +157,10 @@ p {
 .section__get_in_touch {
   display: grid;
   grid-template-rows: auto auto;
-  padding: 20px;
+  padding: 40px;
   margin-bottom: 20px;
   background-color: white;
   text-align: center;
-  margin-bottom: 20px;
   grid-gap: 20px;
 }
 
@@ -173,48 +173,50 @@ p {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   transition: all 0.7s ease;
+  margin-bottom: 30px;
 }
 
 .section__get_in_touch_color {
-  color: white;
 }
 
 .section__get_in_touch_color:hover {
   transform: translatez(-450px);
-  color: #8c9398;
 }
 
 .section__get_in_touch_city {
   grid: flex;
-  background-color: #66cccc;
+  background: linear-gradient(to right, #66cccc, #2fc2c7);
   box-shadow: 12px 12px 15px -15px;
+  color: white;
 }
 
 .section__get_in_touch_city:hover {
-  transform: translatez(-450px);
   background: #f3f5f8;
+  color: #353535;
 }
 
 .section__get_in_touch_phone {
   grid: flex;
-  background-color: #66cccc;
+  background: linear-gradient(to right, #66cccc, #2fc2c7);
   box-shadow: 12px 12px 15px -15px;
+  color: white;
 }
 
 .section__get_in_touch_phone:hover {
-  transform: translatez(-450px);
   background: #f3f5f8;
+  color: #353535;
 }
 
 .section__get_in_touch_email {
   grid: flex;
-  background-color: #66cccc;
+  background: linear-gradient(to right, #66cccc, #2fc2c7);
   box-shadow: 12px 12px 15px -15px;
+  color: white;
 }
 
 .section__get_in_touch_email:hover {
-  transform: translatez(-450px);
   background: #f3f5f8;
+  color: #353535;
 }
 
 .section_get_in_touch_logos {
