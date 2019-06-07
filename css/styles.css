@@ -48,7 +48,13 @@ header {
   color: grey;
 }
 
-.header__section-input {
+.header__subtitle {
+  color: white;
+  opacity: 0.8;
+  font-weight: lighter;
+}
+
+.header__heading {
   display: flex;
   align-items: center;
   justify-content: center;
