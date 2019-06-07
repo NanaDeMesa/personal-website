@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 body {
@@ -11,6 +10,7 @@ body {
   font-family: Roboto, "Helvetica New", Verdana, sans-serif;
   font-size: 16px;
   color: #8c9398;
+  margin: 0 auto;
 }
 
 header {
@@ -29,19 +29,22 @@ header {
   color: white;
   text-shadow: 2px 2px #5e7c8f;
   position: fixed;
-  right: 10px;
+  background: #606872;
+  width: 100%;
+  opacity: 0.7;
 }
 
 .header__navbar_right {
   display: flex;
   list-style-type: none;
-  width: 100%;
+  justify-content: flex-end;
 }
 
 .header__list_item {
   padding-right: 40px;
   text-decoration: none;
   color: white;
+  display: flex;
 }
 
 .header__list_item:active {
@@ -50,7 +53,6 @@ header {
 
 .header__subtitle {
   color: white;
-  opacity: 0.8;
   font-weight: lighter;
 }
 
