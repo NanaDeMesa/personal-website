@@ -13,15 +13,13 @@ body {
   margin: 0 auto;
 }
 
+ul {
+  padding: 0;
+}
+
 header {
-  display: block;
-  flex-direction: center;
-  background-image: url("/images/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/images/hero.jpg);
+  background: #dccacb;
+  justify-content: center;
 }
 
 .header__navbar {
@@ -42,11 +40,10 @@ header {
   padding-right: 40px;
   text-decoration: none;
   color: white;
-  display: flex;
 }
 
 .header__list_item:active {
-  color: #66cccc;
+  color: #dccacb;
 }
 
 .header__subtitle {
@@ -54,7 +51,7 @@ header {
   font-weight: lighter;
   font-size: 30px;
   font-family: "Satisfy", cursive;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .header__heading {
@@ -66,8 +63,8 @@ header {
 }
 
 h1 {
-  font-size: 30px;
-  color: #66cccc;
+  font-size: 32px;
+  color: #090a0a;
   letter-spacing: 1px;
   word-spacing: 1px;
 }
@@ -83,10 +80,11 @@ h1 {
 }
 
 main {
-  display: flex;
   flex-direction: column;
   background-color: #f3f5f8;
-  margin: 0 5px;
+}
+
+.article__button {
 }
 
 .article__about_me {
@@ -194,7 +192,7 @@ p {
 
 .section__get_in_touch_city {
   grid: flex;
-  background: linear-gradient(to right, #66cccc, #2fc2c7);
+  background: #dccacb;
   box-shadow: 12px 12px 15px -15px;
   color: white;
 }
@@ -206,7 +204,7 @@ p {
 
 .section__get_in_touch_phone {
   grid: flex;
-  background: linear-gradient(to right, #66cccc, #2fc2c7);
+  background: #dccacb;
   box-shadow: 12px 12px 15px -15px;
   color: white;
 }
@@ -218,7 +216,7 @@ p {
 
 .section__get_in_touch_email {
   grid: flex;
-  background: linear-gradient(to right, #66cccc, #2fc2c7);
+  background: #dccacb;
   box-shadow: 12px 12px 15px -15px;
   color: white;
 }
