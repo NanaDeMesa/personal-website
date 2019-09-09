@@ -5,60 +5,157 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>nadia eilers, webdeveloper</title>
+        <title>nadia eilers - webdeveloper</title>
         <link rel="stylesheet" href="/css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Radley"
             rel="stylesheet">
-
+        <link
+            href="https://fonts.googleapis.com/css?family=Satisfy&display=swap"
+            rel="stylesheet">
     </head>
 
     <body>
-
         <!--big picture-->
-        <header>
-            <nav>
-                <ul>
-                    <li>ABOUT</li>
-                    <li>SKILL</li>
-                    <li>CONTACT</li>
+        <header class="header__index">
+            <nav class="header__navbar">
+                <ul class="header__navbar_right">
+                    <li><a class="header__list_item" href="#About-Nadia">ABOUT</a></li>
+                    <li><a class="header__list_item" href="#Areas-of-Skill">SKILL</a></li>
+                    <li><a class="header__list_item" href="#Get-in-Touch">CONTACT</a></li>
+                    <li><a class="header__list_item" href="#Get-in-Touch">IMPRINT</a></li>
                 </ul>
             </nav>
-            <section><p></p><p class="hero">I am a Frontend Developer</p><h1>Nadia
-                    Eilers</h1><p></p></section>
+            <section class="header__heading">
+                <h2 class="header__subtitle">I am a Frontend Developer &
+                    Designer</h2>
+                <h1>Nadia Eilers</h1>
+                <a class="header__downbutton" href="#About-Nadia"><img
+                        src="/images/ctaButton.svg"></a>
+            </section>
         </header>
 
         <main>
-            <article>
-                <h2>About Nadia</h2>
-                <img src="https://via.placeholder.com/200x220" alt="picture of
-                    Nadia Eilers">
-                <p></p>
-                <button>VIEW CV</button>
+            <!--Personal Intro-->
+            <article class="article__about_me">
+                <a name="About-Nadia"><h2 class="article__heading">About Nadia</h2></a>
+                <div>
+                    <img src="/images/profile.png" alt="picture
+                        of
+                        Nadia Eilers. Owner of this site.">
+                    <div class="article__pic_underline"></div>
+                    <p class="article__profile-text">I am a Hamburg based
+                        trainee Frontend Developer. By the way, I study
+                        Multimedia Design at a distance learning university
+                        of the ILS. Before I started to study, I gained a lot of
+                        experierence in E-Invoice and Debt Collection. My
+                        experience and
+                        acknowledge in Customer Service, Frontend Development
+                        and Design
+                        is the perfect combination to create the best for you!
+                        Customer Service and Satisfaction is my highest goal.
+                        Let's do something great!
+                    </p>
+                </div>
+                <p class="article__cv_button_container">
+                    <a class="article__cv_button" href="cv.html">VIEW CV</a>
+                </p>
             </article>
 
-            <article>
-                <p>Areas of Skill</p>
-                <section>Code Pen</section>
-                <section>Git Hub</section>
-                <section>E-invoice & debt collection</section>
-                <a href="#"></a>
+            <!--Skills-->
+            <article class="article__skill_container">
+                <a name="Areas-of-Skill"><h3>Area of Skills</a></h3>
+                <div class="article__skill">
+                    <section class="skill__codepen">
+                        <a href="https://codepen.io/nanademesa/"
+                            target="_blank"><img
+                                src="/images/codepenthe.png"
+                                alt="Link to Code Pen"></a><h3>Code
+                            Pen</h3>
+                        <p>Check out my Code Pen profile and see my latest code
+                            creations and look where I started.</p>
+                    </section>
+                    <section class="skill__github"><a
+                            href="https://github.com/NanaDeMesa"
+                            target="_blank"><img
+                                src="/images/Download2.png"
+                                alt="Link to Git Hub"></a><h3>Git
+                            Hub</h3>
+                        <p>Curious? Have a look at my projects and got a first
+                            impression of my coding skills.</p>
+                    </section>
+                    <section class="skill__e-invoice"><img
+                            src="/images/e-invoice.png"
+                            alt="Logo E-Invoice"><h3>E-Invoice</h3>
+                        <p>I gained a lot experience in the area of
+                            E-invoice. I know exactly what a
+                            customer and an end customer wants/needs.</p>
+                    </section>
+                </div>
             </article>
 
-            <section>
-                <img src="https://via.placeholder.com/350x150" alt="A quote">
+            <!--fancy scroll quote-->
+            <section class="section__quote">
+                <div>
+                    <p class="section__quote_text">"A designer knows he has
+                        achieved perfection, not when
+                        there is nothing left to add, <br>
+                        but when there is nothing left to take away."</p>
+                    <p class="section__quote_text">
+                        Antoine de Saint-Exupery
+                    </p>
+                </div>
             </section>
 
-            <section>
-                <h3>Get In Touch</h3>
-                <p>CITY</p>
-                <p>PHONE</p>
-                <p>EMAIL</p>
+            <!--Information how to get in touch-->
+            <!--DIV: Section in email+phone+city in einem container-->
+            <section class="section__get_in_touch">
+                <a name="Get-in-Touch"><h3 class="section__get_in_touch_h3">Get
+                        in touch</a></h3>
+                <div class="section__get_in_touch_container">
+                    <div class="section__get_in_touch_city">
+                        <p class="section__get_in_touch_color">CITY</p>
+                        <p class="section__get_in_touch_color">Hamburg, Germany</p>
+                    </div>
+                    <div class="section__get_in_touch_phone">
+                        <p class="section__get_in_touch_color">PHONE</p>
+                        <p class="section__get_in_touch_color">+49 (0)162 210 79
+                            74</p>
+                    </div>
+                    <div class="section__get_in_touch_email">
+                        <p class="section__get_in_touch_color">EMAIL</p>
+                        <p class="section__get_in_touch_color">nadia.eilers@gmail.com</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--social media info-->
+            <section class="section_get_in_touch_logos">
+                <div>
+                    <a href="https://www.instagram.com/nana.els/"
+                        target="_blank"><img
+                            src="/images/instagram_logo_black.png" alt="Logo and
+                            link to Instagram"></a>
+                </div>
+                <div>
+                    <a href="https://www.xing.com/profile/Nadia_Eilers/"
+                        target="_blank"><img
+                            src="/images/xing_logo_black.png" alt="Logo and link
+                            to Xing"></a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/NanaDeMesa"
+                        target="_blank"><img
+                            src="/images/facebook_logo_black.png" alt="Logo and
+                            link to Facebook"></a>
+                </div>
             </section>
 
         </main>
 
+        <!--Copyright-->
         <footer>
-            <p>&copy;Nadia Eilers, 2019. All Rights Reserved.</p>
+            <p class="footer__copyright">&copy;Nadia Eilers, 2019. All
+                Rights Reserved.</p>
         </footer>
 
     </body>
